@@ -1,0 +1,28 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    patient_name:
+        label: Patinet Name
+        searchable: true
+    
+    order_date:
+        label: Booked Date
+        searchable: true
+    
+    doctor:
+        label: Doctor
+        relation: doctor
+        select: name
+    
+    order_type:
+        label: Order Type
+        relation: order_type
+        select: name
+        
+    body_part:
+        label: Body Part
+        relation: body_part
+        select: name
+        

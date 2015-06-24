@@ -1,0 +1,17 @@
+1.0.1: First version of Dosys
+1.0.2:
+    - Create models
+    - Create controler
+    - Create seed file
+    - create_doctors_table.php
+    - create_order_types_table.php
+    - create_radiographers_table.php
+    - create_orders_table.php
+    - create_body_parts_table.php
+    - create_examinations_table.php
+    - seed_all_table.php
+1.0.3:
+    - Release version 1.1
+    - Show order list
+    - Create new order
+    - Filter through orders

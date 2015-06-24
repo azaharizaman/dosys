@@ -1,0 +1,22 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+    doctor:
+        label: Prescribing Doctor
+        modelClass: AzahariZaman\Dosys\Models\Doctor
+        nameFrom: name
+        conditions: doctor_id in (:filtered)
+        
+    order_type:
+        label: Type
+        modelClass: AzahariZaman\Dosys\Models\OrderType
+        nameFrom: name
+        conditions: order_type_id in (:filtered)
+        
+    body_part:
+        label: Body Part
+        modelClass: AzahariZaman\Dosys\Models\BodyPart
+        nameFrom: name
+        conditions: body_part_id in (:filtered)

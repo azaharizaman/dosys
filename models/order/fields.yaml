@@ -1,0 +1,68 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    MRN:
+        label: MRN
+        comment: Enter numeric MRN number
+        span: left
+        
+    patient_name:
+        label: Patient Name
+        comment: Enter Patinet's name
+        span: left
+    
+    gender:
+        label: Gender
+        comment: Enter Patinet's gender
+        span: right
+        
+
+tabs:
+    fields:
+        order_type:
+            label: Order Type
+            comment: Select a type for this order
+            type: relation
+            tab: Order
+            span: left
+        
+        body_part:
+            label: Body Part
+            type: relation
+            tab: Order
+            span: right
+        
+        examinations:
+            type: partial
+            path: field_examinations
+            tab: Exam
+            
+        doctor:
+            label: Doctor
+            comment: Select prescribing Doctor
+            type: relation
+            tab: Order
+            span: left
+            
+        radiographer:
+            label: Radiographer
+            comment: Select the radiographer booked for this case
+            type: relation
+            tab: Order
+            span: right
+        
+        order_date:
+            label: Booked Date
+            type: datepicker
+            mode: datetime
+            tab: Booking
+            
+        description:
+            label: Describe
+            comment: Please describe any special instruction
+            type: richeditor
+            size: huge
+            tab: Booking
+        

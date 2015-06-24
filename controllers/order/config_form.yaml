@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Order
+
+# Model Form Field configuration
+form: $/azaharizaman/dosys/models/order/fields.yaml
+
+# Model Class name
+modelClass: AzahariZaman\Dosys\Models\Order
+
+# Default redirect location
+defaultRedirect: azaharizaman/dosys/order
+
+# Create page
+create:
+    title: Create Order
+    redirect: azaharizaman/dosys/order/update/:id
+    redirectClose: azaharizaman/dosys/order
+
+# Update page
+update:
+    title: Edit Order
+    redirect: azaharizaman/dosys/order
+    redirectClose: azaharizaman/dosys/order
+
+# Preview page
+preview:
+    title: Preview Order

@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+examinations:
+    label: Examinations
+    view:
+        list: $/azaharizaman/dosys/models/examination/columns.yaml
+        toolbarButtons: create|add|remove
+    manage:
+        showSearch: true
+        recordsPerPage: 10
+        list: $/azaharizaman/dosys/models/examination/columns.yaml
+        form: $/azaharizaman/dosys/models/examination/fields.yaml

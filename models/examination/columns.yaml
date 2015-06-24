@@ -1,0 +1,11 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    group:
+        label: Group
+        searchable: false
+    exam_name:
+        label: Examination
+        searchable: true
