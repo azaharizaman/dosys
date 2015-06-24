@@ -22,4 +22,5 @@ class CreateOrderTypesTable extends Migration
         Schema::dropIfExists('azaharizaman_dosys_order_types');
     }
 
+
 }
