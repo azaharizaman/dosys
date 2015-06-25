@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Doctor
+
+# Model Form Field configuration
+form: $/azaharizaman/dosys/models/doctor/fields.yaml
+
+# Model Class name
+modelClass: AzahariZaman\Dosys\Models\Doctor
+
+# Default redirect location
+defaultRedirect: azaharizaman/dosys/doctor
+
+# Create page
+create:
+    title: Create Doctor
+    redirect: azaharizaman/dosys/doctor/update/:id
+    redirectClose: azaharizaman/dosys/doctor
+
+# Update page
+update:
+    title: Edit Doctor
+    redirect: azaharizaman/dosys/doctor
+    redirectClose: azaharizaman/dosys/doctor
+
+# Preview page
+preview:
+    title: Preview Doctor

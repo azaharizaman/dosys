@@ -25,4 +25,6 @@ columns:
         label: Body Part
         relation: body_part
         select: name
-        
+    
+    gender:
+        label: Gender

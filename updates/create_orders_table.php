@@ -17,6 +17,7 @@ class CreateOrdersTable extends Migration
             $table->string('patient_name');
             $table->string('gender');
             $table->string('body_part_id');
+            $table->string('side');
             $table->string('doctor_id');
             $table->string('radiographer_id');
             $table->timestamp('order_date');

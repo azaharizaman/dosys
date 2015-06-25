@@ -38,7 +38,12 @@ class Plugin extends PluginBase
                         'label' => 'Orders',
                         'icon' => 'icon-heartbeat',
                         'url' => Backend::url('azaharizaman/dosys/order'),
-                    ]
+                    ],
+                    'doctors' => [
+                        'label' => 'Doctors',
+                        'icon' => 'icon-wrench',
+                        'url' => Backend::url('azaharizaman/dosys/doctor'),
+                    ],
                 ]
             ]
         ];

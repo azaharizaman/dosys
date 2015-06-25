@@ -11,13 +11,14 @@ fields:
     patient_name:
         label: Patient Name
         comment: Enter Patinet's name
-        span: left
+        span: right
     
     gender:
         label: Gender
-        comment: Enter Patinet's gender
-        span: right
-        
+        type: radio
+        options:
+            Male: Male
+            Female: Female
 
 tabs:
     fields:
@@ -32,7 +33,16 @@ tabs:
             label: Body Part
             type: relation
             tab: Order
-            span: right
+            span: left
+        
+        side:
+            label: Sides
+            type: radio
+            options:
+                Left: Left
+                Right: Right
+                Body: Body
+            tab: Order
         
         examinations:
             type: partial
