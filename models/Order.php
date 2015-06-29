@@ -1,17 +1,31 @@
 <?php namespace AzahariZaman\Dosys\Models;
 
+use App;
+use Str;
+use Lang;
 use Model;
+use Markdown;
+use ValidationException;
 
 /**
  * Order Model
  */
 class Order extends Model
 {
+    use \October\Rain\Database\Traits\Validation;
 
     /**
      * @var string The database table used by the model.
      */
     public $table = 'azaharizaman_dosys_orders';
+    
+     /*
+     * Validation
+     */
+    public $rules = [
+        'MRN' => 'required',
+        'patient_name' => ['required', 'regex:/^[a-z0-9\/\:_\-\*\[\]\+\?\|]*$/i'],
+    ];
 
     /**
      * @var array Guarded fields

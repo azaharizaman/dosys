@@ -25,6 +25,8 @@ update:
     title: Edit Order
     redirect: azaharizaman/dosys/order
     redirectClose: azaharizaman/dosys/order
+    flashSave: Order updated successfully!
+    flashDelete: Order has been deleted.
 
 # Preview page
 preview:
